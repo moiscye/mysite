@@ -37,7 +37,7 @@ const portfolio_array = [
     icons: [4, 5, 6, 9],
     title: "Nexter",
     text:
-      "Responsive real estate App made with react node and express. The front end is styled using sass with CSS Grid Layout. It also uses Sendgrid for the contact form. Check it out!!!",
+      "Responsive real estate App made with react node and express. The front end is styled using sass with CSS Grid Layout. It also uses Sendgrid for the contact form. Check it out!",
     liveLink: "https://nexter-rs.herokuapp.com/",
     sourceLink: "https://github.com/moiscye/Nexter-react"
   },
@@ -47,7 +47,7 @@ const portfolio_array = [
     icons: [4, 5, 9],
     title: "e-Shopland",
     text:
-      "Responsive shopping web app made with MongoDB, ExpressJS, React, NodeJS, Semantic UI, Sendgrid and more",
+      "Responsive shopping web app made with MongoDB, ExpressJS, React, NodeJS, Semantic UI, Sendgrid and more... Check it out!",
     liveLink: "https://e-shopland.herokuapp.com/",
     sourceLink: "https://github.com/moiscye/e-commerce"
   }

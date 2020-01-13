@@ -10,7 +10,6 @@ import { ReactComponent as Css3Svg } from "../images/technologyIcons/css3.svg";
 import { ReactComponent as GitSvg } from "../images/technologyIcons/git.svg";
 import { ReactComponent as BootstrapSvg } from "../images/technologyIcons/bootstrap.svg";
 import { ReactComponent as JquerySvg } from "../images/technologyIcons/jquery.svg";
-import { ReactComponent as AndroidSvg } from "../images/technologyIcons/android.svg";
 import { ReactComponent as FirebaseSvg } from "../images/technologyIcons/firebase.svg";
 import { ReactComponent as JestSvg } from "../images/technologyIcons/jest.svg";
 import { ReactComponent as MongoDBSvg } from "../images/technologyIcons/mongodb.svg";
@@ -18,6 +17,7 @@ import { ReactComponent as JiraSvg } from "../images/technologyIcons/jira.svg";
 import { ReactComponent as RedisSvg } from "../images/technologyIcons/redis.svg";
 import { ReactComponent as PostgresqlSvg } from "../images/technologyIcons/postgresql.svg";
 import { ReactComponent as DockerSvg } from "../images/technologyIcons/docker.svg";
+import { ReactComponent as AWSSvg } from "../images/technologyIcons/amazonaws.svg";
 
 export const svg_icons = [
   {
@@ -71,11 +71,6 @@ export const svg_icons = [
     svg: <BootstrapSvg />
   },
   {
-    name: "Android",
-    color: "#A4C639",
-    svg: <AndroidSvg />
-  },
-  {
     name: "Firebase",
     color: "#FFCA28",
     svg: <FirebaseSvg />
@@ -110,5 +105,10 @@ export const svg_icons = [
     name: "Docker",
     color: "#1488C6",
     svg: <DockerSvg />
+  },
+  {
+    name: "AWS",
+    color: "#232F3E",
+    svg: <AWSSvg />
   }
 ];
