@@ -7,12 +7,10 @@ import {
   colorGrey4,
   colorGrey7,
   colorGrey2,
-  colorPrimary
+  colorPrimary,
 } from "../../utils/variables";
 
 import mvpLogo from "../../images/experience/mvp.jpg";
-
-import telmexLogo from "../../images/experience/telmex.jpg";
 import laTrobeLogo from "../../images/experience/latrobe.jpg";
 
 // array of experiences, makes it easy to add or remove in the future
@@ -22,7 +20,7 @@ const experiences_list = [
     company: "MVP Studio",
     link: "https://mvp.studio/",
     position: "Web Application Developer",
-    duration: "May 2019 - Present",
+    duration: "May 2020 - Present",
     details: [
       "Creating Restful API’s fetching data from Azure SQL Server Storage and MongoDB Atlas",
       "Building reusable and testable code with the best programming practices",
@@ -30,37 +28,23 @@ const experiences_list = [
       "Develop new user-facing features using ReactJS and semantic UI",
       "Ensure all user input is validated before submitting to the back-end",
       "Translating design and wireframes into high quality code",
-      "App reviewing and planning of future upgrades with the development team"
-    ]
+      "App reviewing and planning of future upgrades with the development team",
+    ],
   },
   {
     logoPath: laTrobeLogo,
     company: "La Trobe University",
     link: "https://www.latrobe.edu.au/",
     position: "Tutor",
-    duration: "Jan 2016 - Dec 2018",
+    duration: "Jan 2016 - Dec 2019",
     details: [
       "I impart valuable, industry proven knowledge to students across four programs",
       "Object-oriented Programming",
       "Mobile and Pervasive Computing",
       "Design Software Engineering",
-      "Algorithms and Data Structures"
-    ]
+      "Algorithms and Data Structures",
+    ],
   },
-  {
-    logoPath: telmexLogo,
-    company: "Telmex",
-    link: "https://telmex.com/",
-    duration: "Dec 2012 - May 2014",
-    position: "Software Developer",
-    details: [
-      "Designing, developing and delivering high-volume applications for critical systems",
-      "Analyzing user requirements, envisioning system features and functionality",
-      "Integrate applications, studying and establishing connectivity with search engines, and information servers",
-      "Design and develop web services",
-      "Support users by developing documentation and assistance tools"
-    ]
-  }
 ];
 
 const ExperienceContainer = styled.div`
