@@ -7,10 +7,10 @@ import { Socials } from "../../utils/socials";
 import {
   colorGrey4,
   colorPrimary,
-  colorPrimaryDark
+  colorPrimaryDark,
 } from "../../utils/variables";
 import { H1, H4 } from "../../utils/typography";
-import avatar from "../../images/me.jpg";
+import avatar from "../../images/me.jpeg";
 import resume from "../../images/MoisesCV.pdf";
 
 const StyledSection = styled.div`
@@ -28,14 +28,14 @@ const InfoBox = styled.div`
 `;
 
 const Avatar = styled.div`
-	display: inline-block;
-	background-image: url('${avatar}');
-	background-position: center;
-	background-size: cover;
-	height: 15rem;
-	width: 15rem;
-	border-radius: 30%;
-	margin-bottom: 2rem;
+  display: inline-block;
+  background-image: url("${avatar}");
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 30%;
+  margin-bottom: 2rem;
 `;
 
 const Name = styled(H1)`
@@ -64,10 +64,10 @@ const Button = styled.a`
   text-decoration: none;
   padding: 1.5rem 0;
   border-radius: 3px;
-  border: 2px solid ${props => (props.secondary ? "#fff" : "transparent")};
+  border: 2px solid ${(props) => (props.secondary ? "#fff" : "transparent")};
   border-bottom: 2px solid
-    ${props => (props.secondary ? "#fff" : colorPrimaryDark)};
-  background-color: ${props =>
+    ${(props) => (props.secondary ? "#fff" : colorPrimaryDark)};
+  background-color: ${(props) =>
     props.secondary ? "rgba(27,32,35, .6)" : colorPrimary};
   cursor: pointer;
   transition: all 0.2s;
@@ -83,10 +83,10 @@ const Button = styled.a`
 
   :active {
     transform: scale(1);
-    background-color: ${props =>
+    background-color: ${(props) =>
       props.secondary ? "rgba(27,32,35, .9)" : colorPrimaryDark};
     border: 2px solid
-      ${props => (props.secondary ? `${colorGrey4}` : "transparent")};
+      ${(props) => (props.secondary ? `${colorGrey4}` : "transparent")};
     color: ${colorGrey4};
   }
 
@@ -111,7 +111,7 @@ class Header extends Component {
                 smoothScroll("footer");
                 ReactGA.event({
                   category: "Home",
-                  action: "Contact Me click"
+                  action: "Contact Me click",
                 });
               }}
             >
@@ -125,7 +125,7 @@ class Header extends Component {
               onClick={() => {
                 ReactGA.event({
                   category: "Home",
-                  action: "Resume click"
+                  action: "Resume click",
                 });
               }}
             >
