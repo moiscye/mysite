@@ -50,7 +50,7 @@ const Icon = styled.div`
   border-radius: 1.5rem;
   padding: 1.7rem;
   fill: #fff;
-  background-color: ${props => props.color};
+  background-color: ${(props) => props.color};
   height: 7rem;
   width: 7rem;
 
@@ -62,6 +62,10 @@ const Icon = styled.div`
 	`}
 `;
 
+const SkillsTitle = styled(H3)`
+  text-align: center;
+`;
+
 // construct an icon tag for each icon in the array
 const Icons = ({ className, list }) => (
   <Wrapper className={className}>
@@ -70,7 +74,7 @@ const Icons = ({ className, list }) => (
         <Icon color={color} className="scrollreveal">
           {svg}
         </Icon>
-        <H3>{name}</H3>
+        <SkillsTitle>{name}</SkillsTitle>
       </IconBox>
     ))}
   </Wrapper>

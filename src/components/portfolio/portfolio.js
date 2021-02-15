@@ -9,29 +9,31 @@ import {
   colorGrey4,
   colorGrey6,
   colorPrimary,
-  colorPrimaryLight
+  colorPrimaryLight,
 } from "../../utils/variables";
 
 import { twinkleEffect } from "../../utils/keyframes";
 import { Container } from "../common/container";
 
 import { svg_icons } from "../../feed/skillIcons";
-import { ReactComponent as GithubSvg } from "../../images/icons/github.svg";
 
-import eShopland from "../../images/portfolio/e-Shopland.png";
+import eShopland from "../../images/portfolio/e-Shopland.jpg";
 import nexter_img from "../../images/portfolio/nexter.jpg";
 import trillo_img from "../../images/portfolio/trillo.jpg";
-
+import clearviewjs_img from "../../images/portfolio/clearviewjs.jpg";
+import chatbot_img from "../../images/portfolio/chatbot.jpg";
+import landingpage_img from "../../images/portfolio/landingpage.jpg";
 const portfolio_array = [
   {
-    imgPath: trillo_img,
-    icons: [4, 5, 6, 9],
-    title: "Trillo",
+    imgPath: eShopland,
+    icons: [0, 1, 4, 5, 7, 12],
+    title: "e-Shopland",
     text:
-      "Hotel Booking using CSS Flex. Simple yet efficient Responsive Hotel booking website that allows users to easily select their rooms",
-    liveLink: "",
-    sourceLink: ""
+      "Responsive shopping web app made with MongoDB, ExpressJS, React, NodeJS, Semantic UI, Sendgrid and more... Check it out!",
+    liveLink: "https://e-shopland.herokuapp.com/",
+    sourceLink: "https://github.com/moiscye/e-commerce",
   },
+
   {
     imgPath: nexter_img,
     icons: [4, 5, 6, 9],
@@ -39,18 +41,44 @@ const portfolio_array = [
     text:
       "Responsive real estate App made with react node and express. The front end is styled using sass with CSS Grid Layout. It also uses Sendgrid for the contact form. Check it out!",
     liveLink: "https://nexter-rs.herokuapp.com/",
-    sourceLink: "https://github.com/moiscye/Nexter-react"
+    sourceLink: "https://github.com/moiscye/Nexter-react",
   },
-
   {
-    imgPath: eShopland,
-    icons: [4, 5, 9],
-    title: "e-Shopland",
+    imgPath: trillo_img,
+    icons: [4, 5, 2, 9],
+    title: "Trillo",
     text:
-      "Responsive shopping web app made with MongoDB, ExpressJS, React, NodeJS, Semantic UI, Sendgrid and more... Check it out!",
-    liveLink: "https://e-shopland.herokuapp.com/",
-    sourceLink: "https://github.com/moiscye/e-commerce"
-  }
+      "Hotel Booking using CSS Flex. Simple yet efficient Responsive Hotel booking website that allows users to easily select their rooms",
+    liveLink: "",
+    sourceLink: "",
+  },
+  {
+    imgPath: clearviewjs_img,
+    icons: [4, 5, 2],
+    title: "Clear View",
+    text:
+      "Responsive trip booking app created with vanilla javascript, PostCSS, HTML5... Check it out!",
+    liveLink: "https://youthful-jepsen-ecd63b.netlify.app/",
+    sourceLink: "",
+  },
+  {
+    imgPath: chatbot_img,
+    icons: [0, 4, 5, 2, 18],
+    title: "Clear View",
+    text:
+      "Chatbot built with react, node and express. Powered by dialogflow... Check it out!",
+    liveLink: "https://eshoplandbot.herokuapp.com/",
+    sourceLink: "",
+  },
+  {
+    imgPath: landingpage_img,
+    icons: [0, 4, 5, 2, 19, 20],
+    title: "Clear View",
+    text:
+      "Beautiful Landing page built with React reusable components. Uses TailwindCSS and Styled-Components for styling... Check it out!",
+    liveLink: "",
+    sourceLink: "",
+  },
 ];
 
 const Wrapper = styled.div`
@@ -73,7 +101,7 @@ const Cards = styled.div`
   }
 
   overflow: hidden;
-  /* height: ${props => (props.isShowAll ? "" : "92rem")}; */
+  /* height: ${(props) => (props.isShowAll ? "" : "92rem")}; */
 `;
 
 const Card = styled.div`
@@ -135,10 +163,12 @@ const Button = styled.a`
   padding: 0.5rem 1rem;
   border-radius: 4px;
   color: #fff;
-  background-color: ${props => (props.secondary ? colorGrey4 : colorPrimaryLight)};
+  background-color: ${(props) =>
+    props.secondary ? colorGrey4 : colorPrimaryLight};
 
   & > * {
-    animation: ${props => (props.twinkle ? twinkleEffect : "none")} 3s infinite;
+    animation: ${(props) => (props.twinkle ? twinkleEffect : "none")} 3s
+      infinite;
   }
 
   :not(:last-child) {
@@ -146,7 +176,8 @@ const Button = styled.a`
   }
 
   :active {
-    background-color: ${props => (props.secondary ? colorGrey3 : colorPrimary)};
+    background-color: ${(props) =>
+      props.secondary ? colorGrey3 : colorPrimary};
     color: ${colorGrey6};
   }
 
@@ -166,7 +197,7 @@ const IconsBox = styled.div`
 const Icon = styled.div`
   height: 1.5rem;
   width: 1.5rem;
-  fill: ${props => (props.color ? props.color : "#fff")};
+  fill: ${(props) => (props.color ? props.color : "#fff")};
   text-align: center;
   margin-right: 0.5rem;
 `;
@@ -225,16 +256,15 @@ const DetailsComponent = ({ className, icons, title, text }) => {
 const ButtonsComponent = ({ className, title, liveLink, sourceLink }) => {
   return (
     <Buttons className={className}>
-      <Button href={liveLink} target="_blank" rel="noopener" twinkle={liveLink ? true : false}>
-        <WhiteDot id="live" />
-        <span>Live</span>
-      </Button>
-      {sourceLink ? (
-        <Button href={sourceLink} target="_blank" rel="noopener" secondary>
-          <Icon id="github">
-            <GithubSvg />
-          </Icon>
-          <span>Source</span>
+      {liveLink ? (
+        <Button
+          href={liveLink}
+          target="_blank"
+          rel="noopener"
+          twinkle={liveLink ? true : false}
+        >
+          <WhiteDot id="live" />
+          <span>Live</span>
         </Button>
       ) : null}
     </Buttons>
@@ -249,7 +279,11 @@ const CardComponent = ({ className, p_array, isShowAll }) => (
           <img src={imgPath} alt={text} />
         </Image>
         <DetailsComponent icons={icons} title={title} text={text} />
-        <ButtonsComponent title={title} liveLink={liveLink} sourceLink={sourceLink} />
+        <ButtonsComponent
+          title={title}
+          liveLink={liveLink}
+          sourceLink={sourceLink}
+        />
       </Card>
     ))}
   </Cards>
@@ -262,7 +296,7 @@ class Portfolio extends Component {
     super();
     this.state = {
       showAllText: "Show All",
-      isShowAll: false
+      isShowAll: false,
     };
   }
 
@@ -271,12 +305,12 @@ class Portfolio extends Component {
     if (this.state.isShowAll) {
       this.setState({
         showAllText: "Show All",
-        isShowAll: false
+        isShowAll: false,
       });
     } else {
       this.setState({
         showAllText: "Hide",
-        isShowAll: true
+        isShowAll: true,
       });
     }
     ScrollReveal().sync();
@@ -285,10 +319,14 @@ class Portfolio extends Component {
   render() {
     console.log(this.state.isShowAll);
 
+    console.log(svg_icons.length);
     return (
       <Container title="Portfolio" transparent>
         <Wrapper>
-          <CardComponent p_array={portfolio_array} isShowAll={this.state.isShowAll} />
+          <CardComponent
+            p_array={portfolio_array}
+            isShowAll={this.state.isShowAll}
+          />
           <ShowAllBtn>
             {/* {this.state.showAllText} */}
 

@@ -3,15 +3,14 @@ import styled from "styled-components";
 import smoothScroll from "../../utils/smoothScroll";
 import ReactGA from "react-ga";
 import { media } from "../../utils/mediaQueriesBuilder";
-import { Socials } from "../../utils/socials";
+
 import {
   colorGrey4,
   colorPrimary,
   colorPrimaryDark,
 } from "../../utils/variables";
 import { H1, H4 } from "../../utils/typography";
-import avatar from "../../images/me.jpeg";
-import resume from "../../images/MoisesCV.pdf";
+import avatar from "../../images/me.jpg";
 
 const StyledSection = styled.div`
   display: flex;
@@ -117,24 +116,7 @@ class Header extends Component {
             >
               Contact Me
             </Button>
-            <Button
-              secondary
-              href={resume}
-              target="_blank"
-              rel="noopener"
-              onClick={() => {
-                ReactGA.event({
-                  category: "Home",
-                  action: "Resume click",
-                });
-              }}
-            >
-              Resume
-            </Button>
           </Buttons>
-          <div className="scrollreveal">
-            <Socials />
-          </div>
         </InfoBox>
       </StyledSection>
     );

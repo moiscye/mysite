@@ -18,97 +18,114 @@ import { ReactComponent as RedisSvg } from "../images/technologyIcons/redis.svg"
 import { ReactComponent as PostgresqlSvg } from "../images/technologyIcons/postgresql.svg";
 import { ReactComponent as DockerSvg } from "../images/technologyIcons/docker.svg";
 import { ReactComponent as AWSSvg } from "../images/technologyIcons/amazonaws.svg";
-
+import { ReactComponent as DialogSvg } from "../images/technologyIcons/dialogflow.svg";
+import { ReactComponent as StyledSvg } from "../images/technologyIcons/styled-components.svg";
+import { ReactComponent as TailwindSvg } from "../images/technologyIcons/tailwindcss.svg";
 export const svg_icons = [
   {
     name: "React",
     color: "#61DAFB",
-    svg: <ReactSvg />
+    svg: <ReactSvg />,
   },
   {
     name: "Redux",
     color: "#764ABC",
-    svg: <ReduxSvg />
+    svg: <ReduxSvg />,
   },
   {
     name: "Javascript",
     color: "#F7DF1E",
-    svg: <JSSvg />
+    svg: <JSSvg />,
   },
   {
     name: "JQuery",
     color: "#0769AD",
-    svg: <JquerySvg />
+    svg: <JquerySvg />,
   },
   {
     name: "HTML",
     color: "#E34F26",
-    svg: <Html5Svg />
+    svg: <Html5Svg />,
   },
   {
     name: "CSS",
     color: "#1572B6",
-    svg: <Css3Svg />
+    svg: <Css3Svg />,
   },
   {
     name: "Sass",
     color: "#CC6699",
-    svg: <SassSvg />
+    svg: <SassSvg />,
   },
   {
     name: "NodeJS",
     color: "#339933",
-    svg: <NodeJSSvg />
+    svg: <NodeJSSvg />,
   },
   {
     name: "Git",
     color: "#F05032",
-    svg: <GitSvg />
+    svg: <GitSvg />,
   },
   {
     name: "Bootstrap",
     color: "#563D7C",
-    svg: <BootstrapSvg />
+    svg: <BootstrapSvg />,
   },
   {
     name: "Firebase",
     color: "#FFCA28",
-    svg: <FirebaseSvg />
+    svg: <FirebaseSvg />,
   },
 
   {
     name: "Jira",
     color: "#172B4D",
-    svg: <JiraSvg />
+    svg: <JiraSvg />,
   },
   {
     name: "MongoDB",
     color: "#47A248",
-    svg: <MongoDBSvg />
+    svg: <MongoDBSvg />,
   },
   {
     name: "Jest",
     color: "#C21325",
-    svg: <JestSvg />
+    svg: <JestSvg />,
   },
   {
     name: "Redis",
     color: "#D82C20",
-    svg: <RedisSvg />
+    svg: <RedisSvg />,
   },
   {
     name: "Postgresql",
     color: "#336791",
-    svg: <PostgresqlSvg />
+    svg: <PostgresqlSvg />,
   },
   {
     name: "Docker",
     color: "#1488C6",
-    svg: <DockerSvg />
+    svg: <DockerSvg />,
   },
   {
     name: "AWS",
     color: "#232F3E",
-    svg: <AWSSvg />
-  }
+    svg: <AWSSvg />,
+  },
+  {
+    name: "Dialogflow",
+    color: "#FF9800",
+    svg: <DialogSvg />,
+  },
+  {
+    name: "Styled Components",
+    color: "#DB7093",
+    svg: <StyledSvg />,
+  },
+  {
+    name: "Tailwind CSS",
+    color: "#38B2AC",
+    svg: <TailwindSvg />,
+  },
 ];
