@@ -31,7 +31,7 @@ const portfolio_array = [
     text:
       "Responsive shopping web app made with MongoDB, ExpressJS, React, NodeJS, Semantic UI, Sendgrid and more... Check it out!",
     liveLink: "https://e-shopland.herokuapp.com/",
-    sourceLink: "https://github.com/moiscye/e-commerce",
+    sourceLink: "",
   },
 
   {
@@ -39,9 +39,9 @@ const portfolio_array = [
     icons: [4, 5, 6, 9],
     title: "Nexter",
     text:
-      "Responsive real estate App made with react node and express. The front end is styled using sass with CSS Grid Layout. It also uses Sendgrid for the contact form. Check it out!",
+      "Responsive real estate App made with react node and express. The front end is styled using sass with CSS Grid Layout. Check it out!",
     liveLink: "https://nexter-rs.herokuapp.com/",
-    sourceLink: "https://github.com/moiscye/Nexter-react",
+    sourceLink: "",
   },
   {
     imgPath: trillo_img,
@@ -64,7 +64,7 @@ const portfolio_array = [
   {
     imgPath: chatbot_img,
     icons: [0, 4, 5, 2, 18],
-    title: "Clear View",
+    title: "Chatbot",
     text:
       "Chatbot built with react, node and express. Powered by dialogflow... Check it out!",
     liveLink: "https://eshoplandbot.herokuapp.com/",
@@ -73,7 +73,7 @@ const portfolio_array = [
   {
     imgPath: landingpage_img,
     icons: [0, 4, 5, 2, 19, 20],
-    title: "Clear View",
+    title: "Landing Page",
     text:
       "Beautiful Landing page built with React reusable components. Uses TailwindCSS and Styled-Components for styling... Check it out!",
     liveLink: "",
