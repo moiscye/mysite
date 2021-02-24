@@ -12,7 +12,7 @@ import {
 
 import mvpLogo from "../../images/experience/mvp.jpg";
 import laTrobeLogo from "../../images/experience/latrobe.jpg";
-
+import freelancerLogo from "../../images/experience/freelancer.jpg";
 // array of experiences, makes it easy to add or remove in the future
 const experiences_list = [
   {
@@ -22,13 +22,32 @@ const experiences_list = [
     position: "Web Application Developer",
     duration: "May 2020 - Present",
     details: [
-      "Creating Restful API’s fetching data from Azure SQL Server Storage and MongoDB Atlas",
-      "Building reusable and testable code with the best programming practices",
+      "Back-end:",
+      "Using AWS amplify tools and services",
+      "Creating Restful APIs fetching data from Amazon DynamoDB and MongoDB Atlas",
+      "Building reusable code with the best programming practices",
       "Implementation of security and data protection",
-      "Develop new user-facing features using ReactJS and semantic UI",
+      "Create database schemas that represent and support business processes",
+      "Authentication and authorization with Amazon Cognito",
+      "Serverless Lambda functions",
+      "Front-end:",
+      "Develop new user-facing features using ReactJS, Tailwindcss, Styled-components",
+      "Develop reusable components",
       "Ensure all user input is validated before submitting to the back-end",
-      "Translating design and wireframes into high quality code",
+      "Optimize application for maximum speed and scalability",
       "App reviewing and planning of future upgrades with the development team",
+    ],
+  },
+  {
+    logoPath: freelancerLogo,
+    company: "Freelancer",
+    link: "https://moisescruz.me/",
+    position: "Web Application Developer",
+    duration: "May 2018 - Present",
+    details: [
+      "In my freelancing career, I have developed a portfolio of systems developments in a variety of fields, such as POS, Rental, Loyalty Rewards Systems, and Fitness systems",
+      "Automated a rentals company by designing a web-based application that took front-end tasks like real-time orders, reservations, account payments, create receipts and reminders; the backend processes integrated with QuickBooks for taxation. It was developed with JavaScript, Node, and third-party APIs",
+      "Developed a design method where I take React as a frontend, and Node, MongoDB, and Express as Backend to create robust, scalable, modern, high-speed web apps. I took this method to eCommerce and boosted their loyal customer retention and sales after reconfiguration",
     ],
   },
   {
@@ -36,7 +55,7 @@ const experiences_list = [
     company: "La Trobe University",
     link: "https://www.latrobe.edu.au/",
     position: "Tutor",
-    duration: "Jan 2016 - Dec 2019",
+    duration: "Mar 2018 - Oct 2020",
     details: [
       "I impart valuable, industry proven knowledge to students across four programs",
       "Object-oriented Programming",

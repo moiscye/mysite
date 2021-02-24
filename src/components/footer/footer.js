@@ -57,7 +57,7 @@ class Footer extends Component {
 
     this.state = {
       toggleForm: false,
-      toggleSubmitted: false
+      toggleSubmitted: false,
     };
     this.toggle = this.toggle.bind(this);
     this.toggleSubmitted = this.toggleSubmitted.bind(this);
@@ -65,12 +65,12 @@ class Footer extends Component {
   toggle() {
     this.setState({
       toggleForm: !this.state.toggleForm,
-      toggleSubmitted: false
+      toggleSubmitted: false,
     });
   }
   toggleSubmitted() {
     this.setState({
-      toggleSubmitted: !this.state.toggleSubmitted
+      toggleSubmitted: !this.state.toggleSubmitted,
     });
   }
   render() {
@@ -83,16 +83,16 @@ class Footer extends Component {
             <br />
             Email me at:
             <A
-              href="mailto: moy_085@hotmail.com"
+              href="mailto: moiscye@gmail.com"
               rel="noopener"
               onClick={() => {
                 ReactGA.event({
                   category: "Footer",
-                  action: "Email click"
+                  action: "Email click",
                 });
               }}
             >
-              moy_085@hotmail.com
+              moiscye@gmail.com
             </A>
           </Content>
           <Socials small />

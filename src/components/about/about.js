@@ -73,9 +73,8 @@ class AboutMe extends Component {
             <StyledH2>Welcome to my page!</StyledH2>
             <P>
               My name is Moises. A passionate software engineer with experience
-              in web application and enterprise software development. Dedicated
-              to self-learning and continuous development in skills,
-              qualifications, and knowledge.
+              in web application development. Dedicated to self-learning and
+              continuous development in skills, qualifications, and knowledge.
               <br />
               <br />
               Please feel free to checkout my resume, projects or contact me.
@@ -86,7 +85,7 @@ class AboutMe extends Component {
             <InfoList>
               <ListItemComponent
                 svg={<GmailSvg />}
-                value="moy_085&#64;hotmail.com"
+                value="moiscye&#64;gmail.com"
               />
               <ListItemComponent
                 svg={<LocationSvg />}
